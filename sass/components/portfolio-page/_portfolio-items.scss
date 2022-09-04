@@ -21,11 +21,11 @@
     }
     
     @include tablet {
-        width: calc((100% - 30px)/2);
+        max-width: calc((100% - 30px)/2);
     }
     
     @include desktop {
-        width: calc((100% - 60px)/3);
+        max-width: calc((100% - 60px)/3);
     }
 }
 
@@ -58,7 +58,6 @@
     padding: 63px 24px;
     height: 100%;
     transform: translate(0, 0);
-    overflow: auto;
 
     transition: transform 250ms $project-cubic-beizer;
 
