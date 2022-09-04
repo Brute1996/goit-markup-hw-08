@@ -1,0 +1,15 @@
+.feature-section {
+    @include desktop {
+        padding-bottom: 0;
+    }
+}
+
+.feature-section__list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+
+
+}
+
+

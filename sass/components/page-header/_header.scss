@@ -1,0 +1,15 @@
+.header {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header__container--style{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include tablet{
+        &{
+            justify-content: flex-start;
+        }
+    }
+}

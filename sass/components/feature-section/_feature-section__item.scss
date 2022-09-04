@@ -1,0 +1,27 @@
+.feature-section__item {
+    @include tablet{
+        width: calc((100% - 30px)/2);}
+
+    @include desktop {
+        width: calc((100% - 90px)/4);
+    }
+}
+
+.feature-section__title {
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+
+    margin-bottom: 10px;
+
+    @include tablet {
+       text-align: left;
+    }
+}
+
+.feature-section__text {
+    font-size: 14px;
+    line-height: 1.71;
+    color: $secondary-font-color;
+}

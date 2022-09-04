@@ -1,0 +1,31 @@
+.footer {
+    background-color: $footer-bgc-color;
+    padding: 60px 0;
+    
+}
+
+.footer__container--style{
+    @include desktop {
+            display: flex;
+        }
+}
+
+.footer__title {
+    color: $fourth-font-color;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: center;
+
+    margin-bottom: 20px;
+
+    @include desktop {
+        text-align: left;
+        }
+}
+
+.footer__tablet-wrapper{
+    @include tablet{
+        display: flex;
+    }
+}

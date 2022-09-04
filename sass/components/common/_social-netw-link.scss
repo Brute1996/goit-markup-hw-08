@@ -1,0 +1,17 @@
+.social-netw-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    fill: #AFB1B8;
+    transition: background-color 250ms $project-cubic-beizer,
+        fill 250ms $project-cubic-beizer;
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+        fill: #fff;
+    }
+}

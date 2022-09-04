@@ -1,0 +1,39 @@
+.footer-addr {
+    text-align: center;
+
+    @include tablet {
+        margin-left: auto;
+        margin-right: 165px;
+    }
+    
+    @include desktop {
+        text-align: left;
+        margin-left: 0;
+        margin-right: 93px;
+    }
+}
+
+.footer-addr__text {
+    font-size: 14px;
+    line-height: 1.71;
+    color: $fourth-font-color;
+
+    margin-bottom: 9px;
+}
+
+.footer-addr__item:not(:last-child) {
+    margin-bottom: 9px;
+}
+
+.footer-addr__link {
+    font-size: 14px;
+    line-height: 1.71;
+    color: $third-font-color;
+
+    display: inline-flex;
+    transition: color 250ms $project-cubic-beizer;
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}

@@ -1,0 +1,19 @@
+.header__menu-button{
+    border: none;
+    background-color: inherit;
+        
+    @include tablet {
+        & {
+            display: none;
+        }
+    }
+}
+
+.header__menu-button--close{
+    position: absolute;
+    padding: 0;
+    top: 10px;
+    right: 15px;
+}
+
+

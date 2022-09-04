@@ -1,0 +1,36 @@
+.cleints-section__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.client-logo{
+    width: calc((100% - 30px)/2);
+    
+    @include tablet {
+        width: calc((100% - 60px)/3);
+    }
+
+    @include desktop {
+        width: calc((100% - 150px)/6);
+    }
+}
+
+.client-logo__link {
+    display: flex;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill: #AFB1B8;
+    justify-content: center;
+    align-items: center;
+
+    transition: border 250ms $project-cubic-beizer,
+        fill 250ms $project-cubic-beizer;
+    &:hover,
+    &:focus {
+        border: 1px solid $accent-color;
+        fill: $accent-color;
+    }
+}

@@ -1,0 +1,23 @@
+.hero-section__btn {
+    font-weight: 700;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: $fourth-font-color;
+    background-color: $accent-color;
+
+    margin: 0 auto;
+    padding: 10px 24px;
+    border-radius: 6px;
+    border: none;
+
+
+    transition: background-color 250ms $project-cubic-beizer;
+    &:hover,
+    &:focus {
+        background-color: $hover-page-btn;
+    }
+
+    @include desktop{
+            padding: 10px 32px;
+    }
+}

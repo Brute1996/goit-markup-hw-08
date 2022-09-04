@@ -1,0 +1,49 @@
+.header-contacts {
+    display: none;
+    
+    @include tablet {
+        & {
+        display: block;
+        margin-left: auto;
+        }
+    }
+    @include desktop {
+        & {
+            display: flex;
+        }
+    }
+}
+
+.header-contacts__item{
+        &:not(:last-child) {
+            margin-right: 30px;
+            margin-bottom: 10px;
+        }
+}
+
+.header-contacts__link {
+    font-size: 12px;
+    color: $secondary-font-color;
+    display: flex;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+    @include desktop {
+        & {
+            font-size: 14px;
+        }
+    }
+}
+
+.header-contacts__icon {
+    fill: currentColor;
+    margin-right: 10px;
+
+    .header-contacts__link:hover &,
+    .header-contacts__link:focus & {
+        fill: $accent-color;
+    }
+}

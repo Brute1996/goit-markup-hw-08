@@ -1,0 +1,20 @@
+.header-nav__link--current {
+    color: $accent-color;
+}
+
+.header-nav__item {
+    position: relative;
+}
+
+.header-nav__link--current::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-radius: 2px;
+    height: 4px;
+    width: 100%;
+    background-color: $accent-color;
+    transform: translate(0, 1px);
+
+}

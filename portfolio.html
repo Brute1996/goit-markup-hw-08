@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <title>Портфоліо</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__container--style container">
+        <!-- Logo -->
+        <a class="header__logo logo" href="./index.htm"
+          >Web<span class="header__logo-part--color">Studio</span></a
+        >
+
+        <!-- tablet and desktop nav -->
+        <nav class="header-nav">
+          <!-- Список навигации -->
+          <ul class="header-nav__list">
+            <li class="header-nav__item">
+              <a class="header-nav__link header-link" href="./index.htm"
+                >Студія</a
+              >
+            </li>
+            <li class="header-nav__item">
+              <a
+                class="header-nav__link header-link header-nav__link--current"
+                href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="header-nav__item">
+              <a class="header-nav__link header-link" href="">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- tablet and desktop contacts -->
+        <ul class="header-contacts">
+          <li class="header-contacts__item">
+            <a
+              class="header-contacts__link header-link"
+              href="mailto:info@devstudio.com"
+            >
+              <svg class="header-contacts__icon" width="16px" height="12px">
+                <use href="./img/icons.svg#icon-msg"></use></svg
+              >info@devstudio.com
+            </a>
+          </li>
+          <li class="header-contacts__item">
+            <a
+              class="header-contacts__link header-link"
+              href="tel:+380961111111"
+            >
+              <svg class="header-contacts__icon" width="10px" height="16px">
+                <use href="./img/icons.svg#icon-tel"></use></svg
+              >+38 096 111 11 11
+            </a>
+          </li>
+        </ul>
+
+        <!-- mobile menu button open-->
+        <button type="button" class="header__menu-button" data-menu-open>
+          <svg
+            width="40px"
+            height="40px"
+            aria-label="іконка відкриття мобільне меню"
+          >
+            <use href="./img/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
+
+        <!-- mobile menu window-->
+        <div class="header-menu is-hidden" data-menu>
+          <!-- menu button close -->
+          <button
+            type="button"
+            class="header__menu-button header__menu-button--close"
+            data-menu-close
+          >
+            <svg width="40px" height="40px" aria-label="іконка закриття меню">
+              <use href="./img/icons.svg#icon-burger-menu-cross"></use>
+            </svg>
+          </button>
+
+          <!-- navigation -->
+          <nav class="header-menu__nav">
+            <!-- Список навигации -->
+            <ul class="header-menu__nav-list">
+              <li class="header-menu__nav-item">
+                <a class="header-menu__nav-link" href="./index.htm">Студія</a>
+              </li>
+              <li class="header-menu__nav-item">
+                <a class="header-menu__nav-link" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="header-menu__nav-item">
+                <a class="header-menu__nav-link" href="">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="bottom-menu-side">
+            <!-- contacts -->
+            <ul class="header-menu__contacts">
+              <li class="header-menu__contacts-item">
+                <a class="header-menu__contacts-phone" href="tel:+380961111111"
+                  >38 096 111 11 11
+                </a>
+              </li>
+              <li class="header-menu__contacts-item">
+                <a
+                  class="header-menu__contacts-mail"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com
+                </a>
+              </li>
+            </ul>
+            <!-- Social networks in menu -->
+            <ul class="header-menu__soc-netw">
+              <li class="header-menu__soc-netw-item">
+                <a class="header-menu__soc-netw-link" href="">Instagram</a>
+              </li>
+              <li class="header-menu__soc-netw-item">
+                <a class="header-menu__soc-netw-link" href="">Twitter</a>
+              </li>
+              <li class="header-menu__soc-netw-item">
+                <a class="header-menu__soc-netw-link" href="">Facebook</a>
+              </li>
+              <li class="header-menu__soc-netw-item">
+                <a class="header-menu__soc-netw-link" href="">Linkedin</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="portf-section section">
+        <div class="container">
+          <h1 class="visually-hidden">Портфолио</h1>
+          <ul class="filter-btn-list">
+            <li class="filter-item">
+              <button class="filter-btn" type="button">Усі</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-btn" type="button">Веб-сайти</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-btn" type="button">Додатки</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-btn" type="button">Дизайн</button>
+            </li>
+            <li class="filter-item">
+              <button class="filter-btn" type="button">Маркетинг</button>
+            </li>
+          </ul>
+          <ul class="portf-list">
+            <li class="portf-item">
+              <a class="porf-link" href="">
+                <div class="portf-pic-wrapper">
+                  <img
+                    class="portf-pic"
+                    srcset="./img/mob-portf-1-x1-min.jpg x1, ./img/mob-portf-1-x2-min.jpg x2"
+                    src="./img/mob-portf-1-x1-min.jpg"
+                    alt="Технокряк"
+                  />
+                  <div class="portf-pic-overlay">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="portf-border">
+                  <h2 class="portf-title">Технокряк</h2>
+                  <p class="portf-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portf-item">
+              <a class="porf-link" href="">
+                <div class="portf-pic-wrapper">
+                  <img
+                    class="portf-pic"
+                    srcset="./img/mob-portf-2-x1-min.jpg x1, ./img/mob-portf-2-x2-min.jpg x2"
+                    src="./img/mob-portf-2-x1-min.jpg"
+                    alt="Постер New Orlean vs Golden Star"
+                  />
+                  <div class="portf-pic-overlay">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="portf-border">
+                  <h2 class="portf-title">Постер New Orlean vs Golden Star</h2>
+                  <p class="portf-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portf-item">
+              <a class="porf-link" href="">
+                <div class="portf-pic-wrapper">
+                  <img
+                    class="portf-pic"
+                    srcset="./img/mob-portf-3-x1-min.jpg x1, ./img/mob-portf-3-x2-min.jpg x2"
+                    src="./img/mob-portf-3-x1-min.jpg"
+                    alt="Ресторан Seafood"
+                  />
+                  <div class="portf-pic-overlay">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="portf-border">
+                  <h2 class="portf-title">Ресторан Seafood</h2>
+                  <p class="portf-text">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="portf-item">
+              <a class="porf-link" href="">
+                <div class="portf-pic-wrapper">
+                  <img
+                    class="portf-pic"
+                    srcset="./img/mob-portf-4-x1-min.jpg x1, ./img/mob-portf-4-x2-min.jpg x2"
+                    src="./img/mob-portf-4-x1-min.jpg"
+                    alt="Проект Prime"
+                  />
+                  <div class="portf-pic-overlay">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="portf-border">
+                  <h2 class="portf-title">Проєкт Prime</h2>
+                  <p class="portf-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portf-item">
+              <a class="porf-link" href="">
+                <div class="portf-pic-wrapper">
+                  <img
+                    class="portf-pic"
+                    srcset="./img/mob-portf-5-x1-min.jpg x1, ./img/mob-portf-5-x2-min.jpg x2"
+                    src="./img/mob-portf-5-x1-min.jpg"
+                    alt="Проект Boxes"
+                  />
+                  <div class="portf-pic-overlay">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="portf-border">
+                  <h2 class="portf-title">Проєкт Boxes</h2>
+                  <p class="portf-text">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="portf-item">
+              <a class="porf-link" href="">
+                <div class="portf-pic-wrapper">
+                  <img
+                    class="portf-pic"
+                    srcset="./img/mob-portf-6-x1-min.jpg x1, ./img/mob-portf-6-x2-min.jpg x2"
+                    src="./img/mob-portf-6-x1-min.jpg"
+                    alt="Inspiration has no Borders"
+                  />
+                  <div class="portf-pic-overlay">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="portf-border">
+                  <h2 class="portf-title">Inspiration has no Borders</h2>
+                  <p class="portf-text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="portf-item">
+              <a class="porf-link" href="">
+                <div class="portf-pic-wrapper">
+                  <img
+                    class="portf-pic"
+                    srcset="./img/mob-portf-7-x1-min.jpg x1, ./img/mob-portf-7-x2-min.jpg x2"
+                    src="./img/mob-portf-7-x1-min.jpg"
+                    alt="Издание Limited Edition"
+                  />
+                  <div class="portf-pic-overlay">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="portf-border">
+                  <h2 class="portf-title">Видання Limited Edition</h2>
+                  <p class="portf-text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="portf-item">
+              <a class="porf-link" href="">
+                <div class="portf-pic-wrapper">
+                  <img
+                    class="portf-pic"
+                    srcset="./img/mob-portf-8-x1-min.jpg x1, ./img/mob-portf-8-x2-min.jpg x2"
+                    src="./img/mob-portf-8-x1-min.jpg"
+                    alt="Проект LAB"
+                  />
+                  <div class="portf-pic-overlay">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="portf-border">
+                  <h2 class="portf-title">Проєкт LAB</h2>
+                  <p class="portf-text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="portf-item">
+              <a class="porf-link" href="">
+                <div class="portf-pic-wrapper">
+                  <img
+                    class="portf-pic"
+                    srcset="./img/mob-portf-9-x1-min.jpg x1, ./img/mob-portf-9-x2-min.jpg x2"
+                    src="./img/mob-portf-9-x1-min.jpg"
+                    alt="Growing Business"
+                  />
+                  <div class="portf-pic-overlay">
+                    <p>
+                      Ресурс пропонує комплексні пропозиції з різним рівнем
+                      функціоналу та сервісів. Все це дозволить відвідувачу
+                      отримати вичерпні відомості про компанію чи приватну
+                      особу.
+                    </p>
+                  </div>
+                </div>
+                <div class="portf-border">
+                  <h2 class="portf-title">Growing Business</h2>
+                  <p class="portf-text">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <!-- ==========FOOTER-------------- -->
+    <footer class="footer">
+      <div class="footer__container--style container">
+        <div class="footer__tablet-wrapper">
+          <!-- logo and adress-->
+          <address class="footer-addr">
+            <a class="footer__logo logo" href="./index.htm"
+              >Web<span class="footer__logo-part--color">Studio</span></a
+            >
+            <p class="footer-addr__text">м. Київ, пр-т Лесі Українки, 26</p>
+            <ul class="footer-addr__list">
+              <li class="footer-addr__item">
+                <a class="footer-addr__link" href="mailto:info@example.com"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="footer-addr__item">
+                <a class="footer-addr__link" href="tel:+380991111111"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+          <!-- footer social networks -->
+          <div class="footer-social-netw">
+            <h2 class="footer-social-netw__title footer__title">
+              Приєднуйтесь
+            </h2>
+            <ul class="footer-social-netw__list">
+              <li class="footer-social-netw__item">
+                <a
+                  class="social-netw-link footer-social-netw__link--style"
+                  href=""
+                >
+                  <svg width="20px" height="20px">
+                    <use href="./img/icons.svg#icon-insta"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-netw__item">
+                <a
+                  class="social-netw-link footer-social-netw__link--style"
+                  href=""
+                >
+                  <svg width="20px" height="20px">
+                    <use href="./img/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-netw__item">
+                <a
+                  class="social-netw-link footer-social-netw__link--style"
+                  href=""
+                >
+                  <svg width="20px" height="20px">
+                    <use href="./img/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-netw__item">
+                <a
+                  class="social-netw-link footer-social-netw__link--style"
+                  href=""
+                >
+                  <svg width="20px" height="20px">
+                    <use href="./img/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- footer subscribe input -->
+        <form class="footer-subscribe">
+          <label>
+            <h2 class="footer-subscribe__title footer__title">
+              Підпишіться на розсилку
+            </h2>
+            <div class="footer-subscribe__input-wrapper">
+              <input
+                class="footer-subscribe__input"
+                type="email"
+                name="subscribe-input"
+                placeholder="E-mail"
+                required
+              />
+              <button class="footer-subscribe__btn submit-btn" type="submit">
+                Підписатися
+                <svg class="footer-subscribe__btn-icon" width="24" height="24">
+                  <use href="./img/icons.svg#icon-icon-send"></use>
+                </svg>
+              </button>
+            </div>
+          </label>
+        </form>
+      </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
