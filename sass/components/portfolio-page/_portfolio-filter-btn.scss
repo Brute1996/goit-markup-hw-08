@@ -5,6 +5,10 @@
     justify-content: flex-start;
     flex-wrap: wrap;
     margin-bottom: 50px;
+
+    @include tablet{
+        justify-content: center;
+    }
 }
 
 .filter-btn {

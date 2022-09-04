@@ -1192,6 +1192,13 @@ select {
       flex-wrap: wrap;
   margin-bottom: 50px;
 }
+@media screen and (min-width: 768px) {
+  .filter-btn-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 
 .filter-btn {
   font-weight: 500;
