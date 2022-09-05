@@ -15,10 +15,16 @@
 }
 
 .header-contacts__item{
+    &:not(:last-child) {
+        margin-right: 30px;
+        margin-bottom: 10px;
+    }
+    
+    @include desktop {
         &:not(:last-child) {
-            margin-right: 30px;
-            margin-bottom: 10px;
+        margin-bottom: 0;
         }
+    }
 }
 
 .header-contacts__link {
