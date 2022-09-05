@@ -12,9 +12,15 @@
     flex-wrap: wrap;
 }
 
+.wedo-section__item {
+    width: calc((100% - 60px)/3);
+}
+
 .wedo-section__pic-wrapper {
     position: relative;
 }
+
+
 
 .wedo-section__item-title {
     position: absolute;

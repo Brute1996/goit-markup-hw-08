@@ -45,7 +45,9 @@
               >
             </li>
             <li class="header-nav__item">
-              <a class="header-nav__link header-link" href="">Контакти</a>
+              <a class="header-nav__link header-link" href="#contacts"
+                >Контакти</a
+              >
             </li>
           </ul>
         </nav>
@@ -113,7 +115,7 @@
                 >
               </li>
               <li class="header-menu__nav-item">
-                <a class="header-menu__nav-link" href="">Контакти</a>
+                <a class="header-menu__nav-link" href="#contacts">Контакти</a>
               </li>
             </ul>
           </nav>
@@ -179,12 +181,30 @@
             <li class="portf-item">
               <a class="porf-link" href="">
                 <div class="portf-pic-wrapper">
-                  <img
-                    class="portf-pic"
-                    srcset="./img/mob-portf-1-x1-min.jpg x1, ./img/mob-portf-1-x2-min.jpg x2"
-                    src="./img/mob-portf-1-x1-min.jpg"
-                    alt="Технокряк"
-                  />
+                  <picture class="portf-pic">
+                    <source
+                      srcset="
+                        ./img/desktop-portf-1-x1-min.jpg 1x,
+                        ./img/desktop-portf-1-x2-min.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/tablet-portf-1-x1-min.jpg 1x,
+                        ./img/tablet-portf-1-x2-min.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/mob-portf-1-x1-min.jpg 1x,
+                        ./img/mob-portf-1-x2-min.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img src="./img/mob-portf-1-x1-min.jpg" alt="Технокряк" />
+                  </picture>
                   <div class="portf-pic-overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -203,12 +223,33 @@
             <li class="portf-item">
               <a class="porf-link" href="">
                 <div class="portf-pic-wrapper">
-                  <img
-                    class="portf-pic"
-                    srcset="./img/mob-portf-2-x1-min.jpg x1, ./img/mob-portf-2-x2-min.jpg x2"
-                    src="./img/mob-portf-2-x1-min.jpg"
-                    alt="Постер New Orlean vs Golden Star"
-                  />
+                  <picture class="portf-pic">
+                    <source
+                      srcset="
+                        ./img/desktop-portf-2-x1-min.jpg 1x,
+                        ./img/desktop-portf-2-x2-min.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/tablet-portf-2-x1-min.jpg 1x,
+                        ./img/tablet-portf-2-x2-min.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/mob-portf-2-x1-min.jpg 1x,
+                        ./img/mob-portf-2-x2-min.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./img/mob-portf-2-x1-min.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                    />
+                  </picture>
                   <div class="portf-pic-overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -227,12 +268,33 @@
             <li class="portf-item">
               <a class="porf-link" href="">
                 <div class="portf-pic-wrapper">
-                  <img
-                    class="portf-pic"
-                    srcset="./img/mob-portf-3-x1-min.jpg x1, ./img/mob-portf-3-x2-min.jpg x2"
-                    src="./img/mob-portf-3-x1-min.jpg"
-                    alt="Ресторан Seafood"
-                  />
+                  <picture class="portf-pic">
+                    <source
+                      srcset="
+                        ./img/desktop-portf-3-x1-min.jpg 1x,
+                        ./img/desktop-portf-3-x2-min.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/tablet-portf-3-x1-min.jpg 1x,
+                        ./img/tablet-portf-3-x2-min.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/mob-portf-3-x1-min.jpg 1x,
+                        ./img/mob-portf-3-x2-min.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./img/mob-portf-3-x1-min.jpg"
+                      alt="Ресторан Seafood"
+                    />
+                  </picture>
                   <div class="portf-pic-overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -251,12 +313,33 @@
             <li class="portf-item">
               <a class="porf-link" href="">
                 <div class="portf-pic-wrapper">
-                  <img
-                    class="portf-pic"
-                    srcset="./img/mob-portf-4-x1-min.jpg x1, ./img/mob-portf-4-x2-min.jpg x2"
-                    src="./img/mob-portf-4-x1-min.jpg"
-                    alt="Проект Prime"
-                  />
+                  <picture class="portf-pic">
+                    <source
+                      srcset="
+                        ./img/desktop-portf-4-x1-min.jpg 1x,
+                        ./img/desktop-portf-4-x2-min.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/tablet-portf-4-x1-min.jpg 1x,
+                        ./img/tablet-portf-4-x2-min.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/mob-portf-4-x1-min.jpg 1x,
+                        ./img/mob-portf-4-x2-min.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./img/mob-portf-4-x1-min.jpg"
+                      alt="Проєкт Prime"
+                    />
+                  </picture>
                   <div class="portf-pic-overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -276,12 +359,33 @@
             <li class="portf-item">
               <a class="porf-link" href="">
                 <div class="portf-pic-wrapper">
-                  <img
-                    class="portf-pic"
-                    srcset="./img/mob-portf-5-x1-min.jpg x1, ./img/mob-portf-5-x2-min.jpg x2"
-                    src="./img/mob-portf-5-x1-min.jpg"
-                    alt="Проект Boxes"
-                  />
+                  <picture class="portf-pic">
+                    <source
+                      srcset="
+                        ./img/desktop-portf-5-x1-min.jpg 1x,
+                        ./img/desktop-portf-5-x2-min.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/tablet-portf-5-x1-min.jpg 1x,
+                        ./img/tablet-portf-5-x2-min.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/mob-portf-5-x1-min.jpg 1x,
+                        ./img/mob-portf-5-x2-min.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./img/mob-portf-5-x1-min.jpg"
+                      alt="Проєкт Boxes"
+                    />
+                  </picture>
                   <div class="portf-pic-overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -300,12 +404,33 @@
             <li class="portf-item">
               <a class="porf-link" href="">
                 <div class="portf-pic-wrapper">
-                  <img
-                    class="portf-pic"
-                    srcset="./img/mob-portf-6-x1-min.jpg x1, ./img/mob-portf-6-x2-min.jpg x2"
-                    src="./img/mob-portf-6-x1-min.jpg"
-                    alt="Inspiration has no Borders"
-                  />
+                  <picture class="portf-pic">
+                    <source
+                      srcset="
+                        ./img/desktop-portf-6-x1-min.jpg 1x,
+                        ./img/desktop-portf-6-x2-min.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/tablet-portf-6-x1-min.jpg 1x,
+                        ./img/tablet-portf-6-x2-min.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/mob-portf-6-x1-min.jpg 1x,
+                        ./img/mob-portf-6-x2-min.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./img/mob-portf-6-x1-min.jpg"
+                      alt="Inspiration has no Borders"
+                    />
+                  </picture>
                   <div class="portf-pic-overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -324,12 +449,33 @@
             <li class="portf-item">
               <a class="porf-link" href="">
                 <div class="portf-pic-wrapper">
-                  <img
-                    class="portf-pic"
-                    srcset="./img/mob-portf-7-x1-min.jpg x1, ./img/mob-portf-7-x2-min.jpg x2"
-                    src="./img/mob-portf-7-x1-min.jpg"
-                    alt="Издание Limited Edition"
-                  />
+                  <picture class="portf-pic">
+                    <source
+                      srcset="
+                        ./img/desktop-portf-7-x1-min.jpg 1x,
+                        ./img/desktop-portf-7-x2-min.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/tablet-portf-7-x1-min.jpg 1x,
+                        ./img/tablet-portf-7-x2-min.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/mob-portf-7-x1-min.jpg 1x,
+                        ./img/mob-portf-7-x2-min.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img
+                      src="./img/mob-portf-7-x1-min.jpg"
+                      alt="Видання Limited Edition"
+                    />
+                  </picture>
                   <div class="portf-pic-overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -348,12 +494,30 @@
             <li class="portf-item">
               <a class="porf-link" href="">
                 <div class="portf-pic-wrapper">
-                  <img
-                    class="portf-pic"
-                    srcset="./img/mob-portf-8-x1-min.jpg x1, ./img/mob-portf-8-x2-min.jpg x2"
-                    src="./img/mob-portf-8-x1-min.jpg"
-                    alt="Проект LAB"
-                  />
+                  <picture class="portf-pic">
+                    <source
+                      srcset="
+                        ./img/desktop-portf-8-x1-min.jpg 1x,
+                        ./img/desktop-portf-8-x2-min.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/tablet-portf-8-x1-min.jpg 1x,
+                        ./img/tablet-portf-8-x2-min.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/mob-portf-8-x1-min.jpg 1x,
+                        ./img/mob-portf-8-x2-min.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img src="./img/mob-portf-8-x1-min.jpg" alt="Проєкт LAB" />
+                  </picture>
                   <div class="portf-pic-overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -372,12 +536,30 @@
             <li class="portf-item">
               <a class="porf-link" href="">
                 <div class="portf-pic-wrapper">
-                  <img
-                    class="portf-pic"
-                    srcset="./img/mob-portf-9-x1-min.jpg x1, ./img/mob-portf-9-x2-min.jpg x2"
-                    src="./img/mob-portf-9-x1-min.jpg"
-                    alt="Growing Business"
-                  />
+                  <picture class="portf-pic">
+                    <source
+                      srcset="
+                        ./img/desktop-portf-9-x1-min.jpg 1x,
+                        ./img/desktop-portf-9-x2-min.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/tablet-portf-9-x1-min.jpg 1x,
+                        ./img/tablet-portf-9-x2-min.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="
+                        ./img/mob-portf-9-x1-min.jpg 1x,
+                        ./img/mob-portf-9-x2-min.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+                    <img src="" alt="Growing Business" />
+                  </picture>
                   <div class="portf-pic-overlay">
                     <p>
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -399,7 +581,7 @@
     </main>
 
     <!-- ==========FOOTER-------------- -->
-    <footer class="footer">
+    <footer class="footer" id="contacts">
       <div class="footer__container--style container">
         <div class="footer__tablet-wrapper">
           <!-- logo and adress-->

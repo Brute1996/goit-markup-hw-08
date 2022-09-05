@@ -45,7 +45,7 @@
               >
             </li>
             <li class="header-nav__item">
-              <a class="header-nav__link header-link" href="">Контакти</a>
+              <a class="header-nav__link header-link" href="#contacts">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -115,7 +115,7 @@
                 >
               </li>
               <li class="header-menu__nav-item">
-                <a class="header-menu__nav-link" href="">Контакти</a>
+                <a class="header-menu__nav-link" href="#contacts">Контакти</a>
               </li>
             </ul>
           </nav>
@@ -234,37 +234,45 @@
           <ul class="wedo-section__list">
             <li class="wedo-section__item">
               <div class="wedo-section__pic-wrapper">
-                <img
-                  class="wedo-section__pic"
-                  src="./img/wedo1.jpg"
-                  width="370"
-                  height="294"
-                  alt="Десктопні додатки"
-                />
+                <picture class="wedo-section__pic">
+                  <source
+                    srcset="
+                      ./img/wedo-1-x1-min.jpg 1x,
+                      ./img/wedo-1-x2-min.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <img src="./img/wedo-1-x1-min.jpg" alt="Десктопні додатки" />
+                </picture>
                 <h3 class="wedo-section__item-title">Десктопні додатки</h3>
               </div>
             </li>
             <li class="wedo-section__item">
               <div class="wedo-section__pic-wrapper">
-                <img
-                  class="wedo-section__pic"
-                  src="./img/wedo2.jpg"
-                  width="370"
-                  height="294"
-                  alt="Мобільні додатки"
-                />
+                <picture class="wedo-section__pic">
+                  <source
+                    srcset="
+                      ./img/wedo-2-x1-min.jpg 1x,
+                      ./img/wedo-2-x2-min.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <img src="./img/wedo-2-x1-min.jpg" alt="Мобільні додатки" />
+                </picture>
                 <h3 class="wedo-section__item-title">Мобільні додатки</h3>
               </div>
             </li>
             <li class="wedo-section__item">
               <div class="wedo-section__pic-wrapper">
-                <img
-                  class="wedo-section__pic"
-                  src="./img/wedo3.jpg"
-                  width="370"
-                  height="294"
-                  alt="Дизанерські рішення"
-                />
+                <picture class="wedo-section__pic">
+                  <source
+                    srcset="
+                      ./img/wedo-3-x1-min.jpg 1x,
+                      ./img/wedo-3-x2-min.jpg 2x
+                    "
+                    media="(min-width:1200px)"
+                  />
+                  <img src="./img/wedo-3-x1-min.jpg" alt="Дизайнерські рішення" />
                 <h3 class="wedo-section__item-title">Дизайнерські рішення</h3>
               </div>
             </li>
@@ -279,11 +287,30 @@
           <!-- Список команды -->
           <ul class="team-section__members-list">
             <li class="team-member">
-              <img
-                class="team-member__pic"
-                src="./img/igor.jpg"
-                alt="Ігор Дем'яненко"
-              />
+              <picture class="team-member__pic">
+                <source
+                  srcset="
+                    ./img/desktop-team-1-x1-min.jpg 1x,
+                    ./img/desktop-team-1-x2-min.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/tablet-team-1-x1-min.jpg 1x,
+                    ./img/tablet-team-1-x2-min.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./img/mob-team-1-x1-min.jpg 1x,
+                    ./img/mob-team-1-x2-min.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img src="./img/mob-team-1-x1-min.jpg" alt="Ігор Дем'яненко" />
+              </picture>
               <h3 class="team-member__name">Ігор Дем'яненко</h3>
               <p class="team-member__pos">Product Designer</p>
               <ul class="team-member__social-netw-list">
@@ -318,11 +345,30 @@
               </ul>
             </li>
             <li class="team-member">
-              <img
-                class="team-member__pic"
-                src="./img/olga.jpg"
-                alt="Ольга Рєпіна"
-              />
+              <picture class="team-member__pic">
+                <source
+                  srcset="
+                    ./img/desktop-team-2-x1-min.jpg 1x,
+                    ./img/desktop-team-2-x2-min.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/tablet-team-2-x1-min.jpg 1x,
+                    ./img/tablet-team-2-x2-min.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./img/mob-team-2-x1-min.jpg 1x,
+                    ./img/mob-team-2-x2-min.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img src="./img/mob-team-2-x1-min.jpg" alt="Ольга Рєпіна" />
+              </picture>
               <h3 class="team-member__name">Ольга Рєпіна</h3>
               <p class="team-member__pos">Frontend Developer</p>
               <ul class="team-member__social-netw-list">
@@ -357,11 +403,33 @@
               </ul>
             </li>
             <li class="team-member">
-              <img
-                class="team-member__pic"
-                src="./img/nikolay.jpg"
-                alt="Микола Тарасов"
-              />
+              <picture class="team-member__pic">
+                <source
+                  srcset="
+                    ./img/desktop-team-3-x1-min.jpg 1x,
+                    ./img/desktop-team-3-x2-min.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/tablet-team-3-x1-min.jpg 1x,
+                    ./img/tablet-team-3-x2-min.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./img/mob-team-3-x1-min.jpg 1x,
+                    ./img/mob-team-3-x2-min.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./img/mob-team-3-x1-min.jpg 1x"
+                  alt="Микола Тарасов"
+                />
+              </picture>
               <h3 class="team-member__name">Микола Тарасов</h3>
               <p class="team-member__pos">Marketing</p>
               <ul class="team-member__social-netw-list">
@@ -396,11 +464,33 @@
               </ul>
             </li>
             <li class="team-member">
-              <img
-                class="team-member__pic"
-                src="./img/mikhail.jpg"
-                alt="Михайло Єрмаков"
-              />
+              <picture class="team-member__pic">
+                <source
+                  srcset="
+                    ./img/desktop-team-4-x1-min.jpg 1x,
+                    ./img/desktop-team-4-x2-min.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                />
+                <source
+                  srcset="
+                    ./img/tablet-team-4-x1-min.jpg 1x,
+                    ./img/tablet-team-4-x2-min.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                />
+                <source
+                  srcset="
+                    ./img/mob-team-4-x1-min.jpg 1x,
+                    ./img/mob-team-4-x2-min.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                />
+                <img
+                  src="./img/mob-team-4-x1-min.jpg"
+                  alt="Михайло Єрмаков"
+                />
+              </picture>
               <h3 class="team-member__name">Михайло Єрмаков</h3>
               <p class="team-member__pos">UI Designer</p>
               <ul class="team-member__social-netw-list">
@@ -491,7 +581,7 @@
     </main>
 
     <!-- =========FOOTER============= -->
-    <footer class="footer">
+    <footer class="footer" id="contacts">
       <div class="footer__container--style container">
         <div class="footer__tablet-wrapper">
           <!-- logo and adress-->

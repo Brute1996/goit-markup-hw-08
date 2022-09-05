@@ -62,6 +62,10 @@ select {
   font: inherit;
 }
 
+picture {
+  display: block;
+}
+
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -621,6 +625,10 @@ select {
   gap: 30px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.wedo-section__item {
+  width: calc((100% - 60px) / 3);
 }
 
 .wedo-section__pic-wrapper {
