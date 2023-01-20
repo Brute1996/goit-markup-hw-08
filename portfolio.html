@@ -24,7 +24,7 @@
     <header class="header">
       <div class="header__container--style container">
         <!-- Logo -->
-        <a class="header__logo logo" href="./index.htm"
+        <a class="header__logo logo" href="./index.html"
           >Web<span class="header__logo-part--color">Studio</span></a
         >
 
@@ -33,7 +33,7 @@
           <!-- Список навигации -->
           <ul class="header-nav__list">
             <li class="header-nav__item">
-              <a class="header-nav__link header-link" href="./index.htm"
+              <a class="header-nav__link header-link" href="./index.html"
                 >Студія</a
               >
             </li>
@@ -105,7 +105,7 @@
             <!-- Список навигации -->
             <ul class="header-menu__nav-list">
               <li class="header-menu__nav-item">
-                <a class="header-menu__nav-link" href="./index.htm">Студія</a>
+                <a class="header-menu__nav-link" href="./index.html">Студія</a>
               </li>
               <li class="header-menu__nav-item">
                 <a
@@ -165,20 +165,26 @@
               <button class="filter-btn" type="button">Усі</button>
             </li>
             <li class="filter-item">
-              <button class="filter-btn" type="button">Веб-сайти</button>
+              <button class="filter-btn" type="button" data-web-site>
+                Веб-сайти
+              </button>
             </li>
             <li class="filter-item">
-              <button class="filter-btn" type="button">Додатки</button>
+              <button class="filter-btn" type="button" data-app>Додатки</button>
             </li>
             <li class="filter-item">
-              <button class="filter-btn" type="button">Дизайн</button>
+              <button class="filter-btn" type="button" data-design>
+                Дизайн
+              </button>
             </li>
             <li class="filter-item">
-              <button class="filter-btn" type="button">Маркетинг</button>
+              <button class="filter-btn" type="button" data-marketing>
+                Маркетинг
+              </button>
             </li>
           </ul>
           <ul class="portf-list">
-            <li class="portf-item">
+            <li class="portf-item" data-web-site>
               <a class="porf-link" href="">
                 <div class="portf-pic-wrapper">
                   <picture class="portf-pic">
@@ -220,7 +226,7 @@
                 </div>
               </a>
             </li>
-            <li class="portf-item">
+            <li class="portf-item" data-design>
               <a class="porf-link" href="">
                 <div class="portf-pic-wrapper">
                   <picture class="portf-pic">
@@ -265,7 +271,7 @@
                 </div>
               </a>
             </li>
-            <li class="portf-item">
+            <li class="portf-item" data-app>
               <a class="porf-link" href="">
                 <div class="portf-pic-wrapper">
                   <picture class="portf-pic">
@@ -310,7 +316,7 @@
                 </div>
               </a>
             </li>
-            <li class="portf-item">
+            <li class="portf-item" data-marketing>
               <a class="porf-link" href="">
                 <div class="portf-pic-wrapper">
                   <picture class="portf-pic">
@@ -356,7 +362,7 @@
                 </div>
               </a>
             </li>
-            <li class="portf-item">
+            <li class="portf-item" data-app>
               <a class="porf-link" href="">
                 <div class="portf-pic-wrapper">
                   <picture class="portf-pic">
@@ -401,7 +407,7 @@
                 </div>
               </a>
             </li>
-            <li class="portf-item">
+            <li class="portf-item" data-web-site>
               <a class="porf-link" href="">
                 <div class="portf-pic-wrapper">
                   <picture class="portf-pic">
@@ -446,7 +452,7 @@
                 </div>
               </a>
             </li>
-            <li class="portf-item">
+            <li class="portf-item" data-design>
               <a class="porf-link" href="">
                 <div class="portf-pic-wrapper">
                   <picture class="portf-pic">
@@ -491,7 +497,7 @@
                 </div>
               </a>
             </li>
-            <li class="portf-item">
+            <li class="portf-item" data-marketing>
               <a class="porf-link" href="">
                 <div class="portf-pic-wrapper">
                   <picture class="portf-pic">
@@ -533,7 +539,7 @@
                 </div>
               </a>
             </li>
-            <li class="portf-item">
+            <li class="portf-item" data-app>
               <a class="porf-link" href="">
                 <div class="portf-pic-wrapper">
                   <picture class="portf-pic">
@@ -586,7 +592,7 @@
         <div class="footer__tablet-wrapper">
           <!-- logo and adress-->
           <address class="footer-addr">
-            <a class="footer__logo logo" href="./index.htm"
+            <a class="footer__logo logo" href="./index.html"
               >Web<span class="footer__logo-part--color">Studio</span></a
             >
             <p class="footer-addr__text">м. Київ, пр-т Лесі Українки, 26</p>
@@ -677,6 +683,7 @@
         </form>
       </div>
     </footer>
+    <script src="./js/filter-portfolio.js"></script>
     <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
